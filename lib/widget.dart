@@ -3,7 +3,7 @@ import 'package:food_order/sHops.dart';
 import 'shopsData.dart' show shopsData;
 
 class sHopsListPage extends StatelessWidget {
-  List<sHops> catogeries = shopsData.getMockedsHops();
+  List catogeries = shopsData.getMockedsHops();
 
   @override
   Widget build(BuildContext context) {
@@ -40,26 +40,21 @@ class sHopsListPage extends StatelessWidget {
                                 fit: BoxFit.cover),
                           ) //child
                               ),
-
                           Container(
                             height: 120,
                             decoration: BoxDecoration(
                               borderRadius: const BorderRadius.only(
                                   bottomLeft: Radius.circular(20),
-                                  bottomRight:
-                                      Radius.circular(20)), // border radius
-
+                                  bottomRight: Radius.circular(20)),
                               gradient: LinearGradient(
                                   begin: Alignment.bottomCenter,
                                   end: Alignment.topCenter,
                                   colors: [
                                     Colors.black.withOpacity(0.7),
                                     Colors.transparent,
-                                  ] // colors
-                                  ), // LinearGradient
-                            ), // boxdecoration
-                          ), //container
-                          //conatainer
+                                  ]),
+                            ),
+                          ),
                           Positioned(
                             bottom: 0,
                             child: Padding(

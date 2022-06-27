@@ -1,8 +1,7 @@
 import 'package:food_order/sHops.dart';
-import 'dart:ui';
 
 class shopsData {
-  static List<sHops> getMockedsHops() {
+  static List getMockedsHops() {
     return [
       sHops(
           //color: Appcolors.SHOP1,
@@ -27,12 +26,6 @@ class shopsData {
           name: 'SHOP 4',
           workingHours: "9:30 - 4:30",
           imgName: "shop4",
-          categories: []),
-      sHops(
-          //color: Appcolors.SHOP5,
-          name: 'SHOP 5',
-          workingHours: "9:30 - 4:30",
-          imgName: "shop5",
           categories: []),
     ];
   }
