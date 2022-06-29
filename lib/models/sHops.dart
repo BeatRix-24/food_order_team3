@@ -1,13 +1,12 @@
-import 'package:flutter/cupertino.dart';
-import 'dart:ui';
-
 class sHops {
+  String? id;
   String? name;
   String? workingHours;
   String? imgName;
-  List<sHops>? categories;
+  List? categories;
 
   sHops({
+    this.id,
     this.name,
     this.workingHours,
     this.imgName,
